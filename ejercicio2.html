@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Diseño con Tablas #2</title>
+
+    <style>
+        table {
+            width: 25%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 1;
+        }
+
+        th.th1 {
+            width: 8px;
+            height: 5px;
+        }
+
+        th.th2 {
+            width: 320px;
+        }
+
+        th.th3 {
+            width: 300px;
+            height: 70px;
+        }
+
+        th.th3 p {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        th.th3 p span {
+            margin-right: 9px;
+        }
+
+        th.th5 {
+            width: 320px;
+            height: 80px;
+        }
+
+        th.th6 {
+            width: 160px;
+            vertical-align: top;
+        }
+
+        th.th7,
+        th.th8 {
+            width: 160px;
+            height: 46px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th class="th1">
+                    <h3>MIC.</h3>
+                    <p>Img</p>
+                    <p>120 px w</p>
+                </th>
+                <th class="th2" colspan="2">Newspaper Title <p>320 px w</p>
+                </th>
+                <th class="th3" colspan="4">
+                    <h3>News</h3>
+                    <p><span>160</span>px w</p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="7">Navigation</td>
+                <td colspan="3">Headline - 480px </td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="3" class="th5">
+                    <h3>Photo of Moon</h3>
+                    <p>320px w</p>
+                </td>
+                <td rowspan="6" colspan="4" class="th6">
+                    <h3>Text</h3>
+                    <p>160 px w</p>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td colspan="2">caption</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td colspan="1" rowspan="1" class="th7">
+                    <h3>Text</h3>
+                    <p>160 px w</p>
+                </td>
+                <td colspan="1" rowspan="1" class="th8">
+                    <h3>Text</h3>
+                    <p>160 px w</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

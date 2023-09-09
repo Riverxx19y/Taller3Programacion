@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educba Layout Example #1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: #083434;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            border: 8px solid #850016;
+        }
+
+        footer {
+            background-color: black;
+            padding: 25px;
+            text-align: center;
+            font-size: 20px;
+            border: 8px solid #850016;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+            border: 10px solid #850016;
+        }
+
+        .menu {
+            width: 20%;
+            text-align: center;
+            background-color: white;
+        }
+
+        .menu2 {
+            background-color: #f88217;
+            width: 20%;
+            text-align: center;
+        }
+        .menu a {
+            background-color: #f2f2f2;
+            color: #333;
+            display: block;
+            padding: 5px;
+            border: 7px solid #f2f2f2;
+            text-decoration: none;
+        }
+
+        .menu2 a {
+            text-decoration: none;
+            padding: 5px;
+            display: block;
+            padding: 5px;
+            color: white;
+        }
+
+        .content {
+            width: 60%;
+            padding: 20px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+            .menu, .menu2 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header><h4>Welcome to EDUCBA</h4></header>
+
+<table>
+    <tr>
+        <td class="menu">
+            <a href="#">Home</a><br>
+            <a href="#">About</a><br>
+            <a href="#">Career</a><br>
+            <a href="#">Contact Us</a><br><br><br>
+        </td>
+        <td class="content">
+            <h2>WHO IS EDUCBA?</h2>
+            <p>Learn Graphic designing, Animation Game Development, Video Editing & more with our Online Certification Courses.</p>
+        </td>
+        <td class="menu2">
+            <br><a href="#"><strong>Courses</strong></a><br>
+            <a href="#">Data Science</a><br>
+            <a href="#">Marketing</a><br>
+            <a href="#">Excel</a><br>
+            <a href="#">Design</a><br>
+        </td>
+    </tr>
+</table>
+<footer><p>&copy; 2019- EDUCBA ALL RIGHTS RESERVED</p></footer>
+</body>
+</html>
